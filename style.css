@@ -1,0 +1,193 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;transition: 0.3s linear;
+}
+body{
+    background:url(bg1.png);
+    background-size: cover;
+    overflow-x: hidden;
+    padding: 15px 2.5vw;
+}
+#container{
+    height: 95vh;
+    width: 95vw;
+    background: rgba(0, 0, 0, 0);
+    box-shadow: 0 8px 32px 0 rgba(187, 203, 216, 0.217);
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.317);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+header .logo{
+    color: white;
+    font-size: 32px;
+    font-family: 'Lobster Two', cursive;
+}
+header nav{
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+    border-radius: 10px;
+    border-left: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-right: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 15px 20px;
+}
+header nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 0.8px;
+    padding: 5px 15px;
+    margin-left: 10px;
+}
+header #phone{
+    height: 55px;
+    padding: 10px;
+    margin-right: 20px;
+    background: rgba(255, 255, 255, 0.196);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4.5px );
+-webkit-backdrop-filter: blur( 4.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+header #phone:hover{
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#content{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+#content .images{
+    position: relative;
+}
+#content .images #img1{
+    height: 120px;
+    position: absolute;
+    bottom: 100px;
+    z-index: 5;
+    animation: img_one 1s linear 2s infinite alternate; 
+}
+#content .images #img3{
+    height: 70px;
+    position: absolute;
+    z-index: 6;
+    animation: img_three 2s linear 3s infinite alternate; 
+}
+@keyframes img_one {
+    to {transform: translateY(1px);}
+    from {transform: translateY(30px);}
+}
+
+@keyframes img_three {
+    to {transform: translateY(10px) translateX(5px);}
+    from {transform: translateY(40px) translateX(30px);}
+}
+
+#content .images #img2{
+    height: 500px;
+    animation: img_two 1s linear 2s infinite alternate; 
+}
+@keyframes img_two {
+    to {transform: translateY(0px);}
+    from {transform: translateY(20px);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#content .text{
+    width: 45vw;
+    padding: 50px;
+}
+#content .text h1{
+    color: rgba(255, 255, 255, 0.918);
+    font-size: 57px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    font-family: 'jost', sans-serif;
+}
+#content .text p{
+    color: rgba(255, 255, 255, 0.788);
+    font-size: 17px;
+    letter-spacing: .3px;
+    line-height: 23px;
+    margin-top: 20px;
+    font-family: 'Merienda', cursive;
+
+}
+#content .text button{
+    color: rgba(255, 255, 255, 0.788);
+    font-family: 'jost', sans-serif;
+    font-size: 16.5px;
+    letter-spacing: 0.5px;
+    line-height: 23px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    background: linear-gradient(to top left, rgb(37, 54, 187),rgb(141, 5, 231));
+    border-bottom: 1px solid rgb(63, 0, 139);
+}
+#content .text button:hover{
+    background: linear-gradient(to top left, rgb(63, 74, 159),rgb(126, 10, 203));
+    cursor: pointer;
+    border-bottom: 5px solid rgb(59, 10, 119);
+    transform: translateY(-5px);
+}
+#content .text #btn2{
+    color: rgba(255, 255, 255, 0.788);
+    font-family: 'Jost', sans-serif;
+    font-size: 16.5px;
+    letter-spacing: 0.5px;
+    line-height: 23px;
+    padding: 15px 20px;
+    background: rgba(218, 218, 218, 0.279);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+#content .text i{
+    color: white;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 25px;
+}
